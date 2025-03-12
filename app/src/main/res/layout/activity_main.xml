@@ -5,122 +5,145 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/peakpx_gradyan"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/txtAdSoyad"
         android:layout_width="221dp"
         android:layout_height="51dp"
         android:layout_marginTop="52dp"
+        android:autofillHints="name"
         android:ems="10"
-        android:hint="Ad Soyad"
+        android:hint="@string/adSoyad"
         android:inputType="text"
+        android:textColorHint="@color/material_dynamic_neutral40"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/txtOgrNo"
         android:layout_width="230dp"
         android:layout_height="59dp"
         android:layout_marginTop="36dp"
+        android:autofillHints="ogrno"
         android:ems="10"
-        android:hint="Öğrenci No"
+        android:hint="@string/ogrenciNo"
         android:inputType="number"
+        android:textColorHint="@color/material_dynamic_neutral40"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="326dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="13dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="9" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="10" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="11" />
-
-        <RadioButton
-            android:id="@+id/radioButton4"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="12" />
-
-    </RadioGroup>
+        app:layout_constraintTop_toBottomOf="@+id/txtAdSoyad" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="83dp"
-        android:text="Sınıf Seçiniz"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/sinifSeciniz"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="326dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioSinif9"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sinif9"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioSinif10"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sinif10"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioSinif11"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sinif11"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioSinif12"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sinif12"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <RadioGroup
         android:id="@+id/radioGroup2"
         android:layout_width="92dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber">
+        app:layout_constraintTop_toBottomOf="@+id/txtOgrNo">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/radioCinsKadin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kadın" />
+            android:text="@string/cinsKadin"
+            android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/radioCinsErkek"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Erkek" />
+            android:text="@string/cinsErkek"
+            android:textSize="20sp" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="33dp"
-        android:text="Cinsiyet"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/cinsSeciniz"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/txtOgrNo" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="72dp"
+        android:id="@+id/btnGonder"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
         android:onClick="gonder"
-        android:text="Button"
+        android:text="@string/btnGonder"
+        android:textColor="@android:color/system_control_activated_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:strokeColor="@android:color/system_control_activated_dark"
+        app:strokeWidth="2dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
