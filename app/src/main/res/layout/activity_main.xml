@@ -130,10 +130,10 @@
 
     <Button
         android:id="@+id/btnGonder"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_width="348dp"
+        android:layout_height="60dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:onClick="gonder"
@@ -141,9 +141,20 @@
         android:textColor="@android:color/system_control_activated_dark"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/katilmakIstiyorum"
         app:strokeColor="@android:color/system_control_activated_dark"
         app:strokeWidth="2dp" />
+
+    <CheckBox
+        android:id="@+id/katilmakIstiyorum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="59dp"
+        android:text="@string/katilmakIstiyorum"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 </androidx.constraintlayout.widget.ConstraintLayout>

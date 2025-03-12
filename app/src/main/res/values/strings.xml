@@ -4,6 +4,7 @@
     <string name="ogrenciNo">Öğrenci No</string>
     <string name="btnGonder">Gönder</string>
     <string name="sinifSeciniz">Sınıf Seçiniz</string>
+    <string name="sinif">Sınıf</string>
     <string name="sinif9">9</string>
     <string name="sinif10">10</string>
     <string name="sinif11">11</string>
@@ -11,4 +12,6 @@
     <string name="cinsSeciniz">Cinsiyet</string>
     <string name="cinsKadin">Kadın</string>
     <string name="cinsErkek">Erkek</string>
+    <string name="katilmakIstiyorum">Katılmak İstiyorum</string>
+    <string name="katilmaDurumu">Katılma Durumu</string>
 </resources>

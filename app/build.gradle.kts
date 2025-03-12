@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.formveriktarma"
-        minSdk = 27
+        minSdk = 31
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
