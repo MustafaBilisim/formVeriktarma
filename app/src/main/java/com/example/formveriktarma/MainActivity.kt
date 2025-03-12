@@ -1,5 +1,6 @@
 package com.example.formveriktarma
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
 
     fun gonder(view: View)
     {
-        val yeniActi
+        val IkinciEkraniAc = Intent(this,IkinciEkran::class.java)
+
+        startActivity(IkinciEkraniAc)
     }
 }
